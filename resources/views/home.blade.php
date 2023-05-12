@@ -10,8 +10,8 @@
           <th scope="col"></th>
           <th scope="col">Partenza</th>
           <th scope="col">Arrivo</th>
-          <th scope="col">Ora di partenza</th>
-          <th scope="col">Ora di arrivo</th>
+          <th scope="col">Data di partenza</th>
+          <th scope="col">Data di arrivo</th>
           <th scope="col">Numero</th>
           <th scope="col">Carrozze</th>
           <th scope="col"></th>
@@ -23,8 +23,8 @@
           <th scope="row">{{$train['company']}}</th>
           <td>{{$train['start_station']}}</td>
           <td>{{$train['destination_station']}}</td>
-          <td>{{$train['time_departure']}}</td>
-          <td>{{$train['time_arrive']}}</td>
+          <td>{{$train['date_departure']}}</td>
+          <td>{{$train['date_arrive']}}</td>
           <td>{{$train['train_number']}}</td>
           <td>{{$train['train_carriage']}}</td>
           <td class="@if($train['cancelled'] == 1) cancelled @elseif($train['in_time'] == 0) delay @else in-time @endif">&#x2022</td>
